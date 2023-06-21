@@ -1,0 +1,75 @@
+<div class="content-wrapper">
+  <div class="page-header">
+    <h3 class="page-title"> Cadastro de usuarios </h3>
+  </div>
+  <div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Dados do Usuario</h4>
+          <p class="card-description"> Preencha com atenção. </p>
+          {{#if message}}
+            <div class="alert alert-danger" role="alert">{{message}}</div>
+          {{/if}}
+          <form class="forms-sample" action="/caduser/icluser" method="post">
+            <div class="form-group">
+              <label for="exampleInputUsername1">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="exampleInputUsername1"
+                placeholder="Nome do Usuário"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputUsername1">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="exampleInputUsername1"
+                placeholder="E-mail do Usuário"
+              />
+            </div>
+            <div class="form-group">
+              <label for="cadTelefone">Telefone</label>
+              <input
+                type="number"
+                name="fone"
+                class="form-control"
+                id="cadTelefone"
+                placeholder="Numero de telefone do Usuário"
+              /><hr />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Senha</label>
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Senha do Usuário"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Confirma a senha</label>
+              <input
+                type="password"
+                name="password-conf"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Repita a senha do Usuário"
+              /><hr />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary mr-2"
+            >Cadastrar</button>
+            <button class="btn btn-dark">Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

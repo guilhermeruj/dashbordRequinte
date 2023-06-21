@@ -1,0 +1,148 @@
+<div class="content-wrapper">
+  <div class="page-header">
+    <h3 class="page-title"> Agendamentos </h3>
+  </div>
+  <div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Dados do Cliente</h4>
+          <p class="card-description"> Preencha com atenção. </p>
+          <hr />
+          <form
+            class="forms-sample"
+            action="/agendamentos/insertangd"
+            method="post"
+          >
+            <div class="form-group">
+              <label for="cod">N° de Contrato</label>
+              <input
+                type="number"
+                class="form-control"
+                name="contrato"
+                id="cod"
+                placeholder="Informe o número de contrato do cliente"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputUsername1">Nome do cliente:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="cliente"
+                id="exampleInputUsername1"
+                placeholder="Informe o nome do cliente"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">N° de Telefone</label>
+              <input
+                type="number"
+                name="telefone"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Numero de telefone do cliente"
+              />
+              <p class="card-description">
+                Mantenha o padrão (34) 9 00000000
+              </p><hr />
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="dataAgdProva">Data de Prova:</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="dataAgdProva"
+                    id="dataAgdProva"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="dataAgdRetirada">Data de Retirada:</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="dataAgdRetirada"
+                    id="dataAgdRetirada"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="dataAgdDevolucao">Data de Devolução:</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="dataAgdDevolucao"
+                    id="dataAgdDevolucao"
+                  />
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="hora">Horário de Prova:</label>
+                  <input
+                    type="time"
+                    class="form-control"
+                    name="horaProva"
+                    id="horaProva"
+                    placeholder="Qual o horario do agendamento."
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="hora">Horário de Retirada:</label>
+                  <input
+                    type="time"
+                    class="form-control"
+                    name="horaRetirada"
+                    id="horaRetirada"
+                    placeholder="Qual o horario do agendamento."
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="hora">Horário de Devolução:</label>
+                  <input
+                    type="time"
+                    class="form-control"
+                    name="horaDevolucao"
+                    id="horaDevolucao"
+                    placeholder="Qual o horario do agendamento."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="dataAgd">Quantos dias de antecedência</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="antecedencia"
+                  id="antecedencia"
+                  placeholder="Dias de atencedencia"
+                />
+              </div>
+            </div>
+            <hr />
+            <button
+              type="submit"
+              class="btn btn-primary mr-2"
+            >Cadastrar</button>
+            <button class="btn btn-dark">Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
